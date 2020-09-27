@@ -1,0 +1,17 @@
+.homepage {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 80px;
+  background-position: center;
+  background-size: cover;
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+}
