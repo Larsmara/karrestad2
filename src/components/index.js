@@ -1,8 +1,6 @@
-import Navbar from "./navbar";
-import Card from "./card";
-import Button from "./button";
-import Select from "./select";
-import Input from "./input";
-import TextArea from "./textArea/";
+import Container from "./container/Container";
+import Card from "./card/Card";
+import Button from "./button/Button";
+import Navbar from "./navigation/Navbar";
 
-export { Navbar, Card, Button, Select, Input, TextArea };
+export { Container, Card, Button, Navbar };

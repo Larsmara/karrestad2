@@ -1,27 +1,31 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { Navbar } from './components';
-import {
-  HomePage,
-  ComplainPage,
-  ContactPage,
-  RulesOfOrder,
-  LoginPage,
-} from './pages';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import { Container, Navbar } from "./components";
+import { HomePage } from "./pages";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div className='main'>
+      <Navbar>Lars</Navbar>
+      <Container>
         <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route exact path='/contact' component={ContactPage} />
-          <Route exact path='/complain' component={ComplainPage} />
-          <Route exact path='/rules' component={RulesOfOrder} />
-          <Route exact path='/login' component={LoginPage} />
+          <Route exact path="/contact">
+            Contact
+          </Route>
+          <Route exact path="/complain">
+            Complain
+          </Route>
+          <Route exact path="/rules">
+            Rules
+          </Route>
+          <Route exact path="/login">
+            Login
+          </Route>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
         </Switch>
-      </div>
+      </Container>
     </>
   );
 }
