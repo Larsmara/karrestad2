@@ -60,4 +60,4 @@ Database modell
 
 ### Landing page
 
-![Landing page]("./assets/wireframes/Landing.png")
+![Landing page](./assets/wireframes/Landing.png)
