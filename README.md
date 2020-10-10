@@ -61,3 +61,23 @@ Database modell
 ### Landing page
 
 ![Landing page](./assets/wireframes/Landing.png)
+
+### Regler
+
+![Landing page](./assets/wireframes/Regler.png)
+
+### Styret
+
+![Landing page](./assets/wireframes/Styret.png)
+
+### Klage
+
+![Landing page](./assets/wireframes/Klage.png)
+
+### Portal
+
+![Landing page](./assets/wireframes/Portal.png)
+
+### Edit info
+
+![Landing page](./assets/wireframes/Editinfo.png)
