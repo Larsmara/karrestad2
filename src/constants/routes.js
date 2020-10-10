@@ -1,6 +1,8 @@
-export default Routes = {
+const ROUTES = {
   HOME: "/",
-  ABOUT: "/about",
-  CONTACT: "/contact",
-  PORTAL: "/portal"
+  RULES: "/rules",
+  MEMBERS: "/members",
+  COMPLAIN: "/complain",
+  LOGIN: "/login"
 };
+export default ROUTES;
