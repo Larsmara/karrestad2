@@ -12,7 +12,7 @@ export default function BasicLayout({ children, ...rest }) {
       strict: true
     })?.isExact ?? false;
   return (
-    <Flex direction="column" align="center" maxW={{ xl: "1200px" }} m="0 auto" {...rest}>
+    <Flex direction="column" align="center" maxW={{ xl: "1200px" }} m="0 auto" pb={6} {...rest}>
       <Header />
       {isLanding ? children : <Container>{children}</Container>}
     </Flex>

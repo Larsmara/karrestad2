@@ -1,8 +1,13 @@
 import React from "react";
 import BasicLayout from "@containers/BasicLayout";
+import ComplainContainer from "@containers/ComplainContainer";
 
 const ComplaintPage = () => {
-  return <BasicLayout>Send complaint here</BasicLayout>;
+  return (
+    <BasicLayout>
+      <ComplainContainer />
+    </BasicLayout>
+  );
 };
 
 export default ComplaintPage;
