@@ -11,6 +11,7 @@ import {
   ButtonGroup,
   Text
 } from "@chakra-ui/core";
+import apartments from "@fixtures/apartments";
 
 const ComplainContainer = () => {
   return (
@@ -22,21 +23,17 @@ const ComplainContainer = () => {
         <Box mt={3}>
           <form>
             <Input placeholder="Navn" />
-            <Select placeholder="Leilighet" mt={4}>
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
+            <Select placeholder="Ditt bruksnummer" mt={4}>
+              {apartments.map((apt) => (
+                <option
+                  key={`${apt.oppgang}-${apt.nummer}`}
+                  value={{ nr: apt.nummer, door: apt.oppgang }}
+                >
+                  {`Oppgang: ${apt.oppgang}, Nr. ${apt.nummer}`}
+                </option>
+              ))}
             </Select>
             <Textarea mt={4} placeholder="Skriv inn din sak her..." />
-            <Flex mt={2}>
-              <Box>Ditt bilde</Box>
-              <Spacer />
-              <Box>
-                <Button colorScheme="primary" size="md">
-                  Last opp bilde
-                </Button>
-              </Box>
-            </Flex>
           </form>
         </Box>
       </Box>

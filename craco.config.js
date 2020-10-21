@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const path = require("path");
 const alias = require("./src/lib/aliases");
 

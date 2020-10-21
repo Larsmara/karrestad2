@@ -3,7 +3,7 @@ import { Box, UnorderedList, ListItem, Heading, Text } from "@chakra-ui/core";
 
 const RulesContainer = ({ title, text, isAdmin, ...rest }) => {
   return (
-    <Box pb={4} pt={2}>
+    <Box pb={4} pt={2} p={4}>
       <Heading fontSize="2xl">{title}</Heading>
       <UnorderedList>
         <ListItem>
