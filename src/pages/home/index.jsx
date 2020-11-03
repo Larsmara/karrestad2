@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "@components/hero";
-import BasicLayout from "@containers/BasicLayout";
+import BasicLayout from "@components/basicLayout";
 import Karrestad from "./karrestad.jpg";
 
 export default function Landing() {

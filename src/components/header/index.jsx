@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/core";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import Logo from "../logo";
-import ROUTES from "@constants/routes";
+import { ROUTES } from "@constants/routes";
 
 const ColorModeSwitcher = (props) => {
   const { toggleColorMode } = useColorMode();
@@ -84,12 +84,12 @@ const Header = (props) => {
       w="100%"
       mb={8}
       p={8}
-      bg={["primary.500", "primary.500", "transparent", "transparent"]}
-      color={["white", "white", "primary.700", "primary.700"]}
+      bg={["teal.500", "teal.500", "transparent", "transparent"]}
+      color={["white", "white", "teal.700", "teal.700"]}
       {...props}
     >
       <Flex align="center">
-        <Logo w="120px" color={["white", "white", "primary.500", "primary.500"]} />
+        <Logo w="120px" color={["white", "white", "teal.500", "teal.500"]} />
       </Flex>
 
       <Box display={{ base: "block", md: "none" }} onClick={toggleMenu}>
@@ -115,10 +115,10 @@ const Header = (props) => {
               width="100px"
               size="sm"
               rounded="md"
-              color={["primary.500", "primary.500", "white", "white"]}
-              bg={["white", "white", "primary.500", "primary.500"]}
+              color={["teal.500", "teal.500", "white", "white"]}
+              bg={["white", "white", "teal.500", "teal.500"]}
               _hover={{
-                bg: ["primary.100", "primary.100", "primary.600", "primary.600"]
+                bg: ["teal.100", "teal.100", "teal.600", "teal.600"]
               }}
             >
               Portal

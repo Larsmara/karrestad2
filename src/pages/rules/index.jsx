@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Heading, Box } from "@chakra-ui/core";
-import BasicLayout from "@containers/BasicLayout";
+import BasicLayout from "@components/basicLayout";
 import RulesContainer from "@containers/RulesContainer";
 import { rules } from "@fixtures/rules";
 

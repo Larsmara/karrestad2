@@ -1,5 +1,5 @@
 import React from "react";
-import BasicLayout from "@containers/BasicLayout";
+import BasicLayout from "@components/basicLayout";
 import LoginContainer from "@containers/LoginContainer";
 
 const LoginPage = () => {

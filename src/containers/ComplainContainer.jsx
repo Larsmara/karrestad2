@@ -42,7 +42,7 @@ const ComplainContainer = () => {
         <Spacer />
         <ButtonGroup spacing="6">
           <Button>Avbryt</Button>
-          <Button colorScheme="primary">Lagre</Button>
+          <Button colorScheme="teal">Lagre</Button>
         </ButtonGroup>
       </Flex>
 

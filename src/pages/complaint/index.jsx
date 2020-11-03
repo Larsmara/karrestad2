@@ -1,5 +1,5 @@
 import React from "react";
-import BasicLayout from "@containers/BasicLayout";
+import BasicLayout from "@components/basicLayout";
 import ComplainContainer from "@containers/ComplainContainer";
 
 const ComplaintPage = () => {

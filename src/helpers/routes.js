@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-
+import AdminLayout from "@components/adminLayout";
+import { AdminPortal, AdminRules, AdminMembers, AdminHome } from "@containers/admin";
 export const IfUserRedirect = ({ user, loggedInPath, children, ...rest }) => {
   return (
     <Route
@@ -30,6 +31,29 @@ export const ProtectedRoute = ({ user, children, ...rest }) => {
           return <Redirect to={{ pathname: "/", state: { from: location } }} />;
         }
         return null;
+      }}
+    />
+  );
+};
+
+export const ProtectedNestedRoute = ({ user, children, ...rest }) => {
+  return (
+    <Route
+      path="/admin/"
+      render={({ match: { url }, location }) => {
+        if (user) {
+          return (
+            <AdminLayout>
+              <Route path={`${url}/`} component={AdminPortal} exact />
+              <Route path={`${url}/rules`} component={AdminRules} />
+              <Route path={`${url}/members`} component={AdminMembers} />
+              <Route path={`${url}/home`} component={AdminHome} />
+            </AdminLayout>
+          );
+        }
+        if (!user) {
+          return <Redirect to={{ pathname: "/", state: { from: location } }} />;
+        }
       }}
     />
   );

@@ -25,7 +25,7 @@ export default function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest
           as="h1"
           size="xl"
           fontWeight="bold"
-          color="primary.800"
+          color="teal.800"
           textAlign={["center", "center", "left", "left"]}
         >
           {title}
@@ -33,7 +33,7 @@ export default function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest
         <Heading
           as="h2"
           size="md"
-          color="primary.800"
+          color="teal.800"
           opacity="0.8"
           fontWeight="normal"
           lineHeight={1.5}
@@ -43,7 +43,7 @@ export default function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest
         </Heading>
         <Link to={ctaLink}>
           <Button
-            colorScheme="primary"
+            colorScheme="teal"
             borderRadius="8px"
             py="4"
             px="4"

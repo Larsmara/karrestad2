@@ -1,4 +1,4 @@
-const ROUTES = {
+export const ROUTES = {
   HOME: "/",
   RULES: "/rules",
   MEMBERS: "/members",
@@ -6,4 +6,10 @@ const ROUTES = {
   LOGIN: "/login"
 };
 
-export default ROUTES;
+export const ADMIN_ROUTES = {
+  ADMIN: "/admin/",
+  PORTAL: "/admin/portal",
+  RULES: "/admin/rules",
+  MEMBERS: "/admin/members",
+  HOME: "/admin/home"
+};

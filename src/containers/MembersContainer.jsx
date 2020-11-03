@@ -9,7 +9,7 @@ const MembersContainer = ({ member: { role, name, from, to } }) => {
     return `${day}.${month}.${year}`;
   };
   return (
-    <Box p={4} mb={4} shadow="md">
+    <Box pt={2}>
       <Heading fontSize="xl">{name}</Heading>
       <Text fontSize="lg">{`${role}, fra: ${from} - til: ${toDate(to)}`}</Text>
     </Box>

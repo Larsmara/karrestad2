@@ -31,6 +31,7 @@ module.exports = {
       {
         aspects: ["invalidHref"]
       }
-    ]
+    ],
+    "import/no-unresolved": false
   }
 };
