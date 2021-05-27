@@ -1,17 +1,7 @@
-import HomePage from './homepage';
-import AboutPage from './aboutpage';
-import NewsPage from './newspage';
-import ComplainPage from './complainpage';
-import ContactPage from './contactpage';
-import RulesOfOrder from './rulesOfOrder';
-import LoginPage from './loginPage';
-
-export {
-  HomePage,
-  AboutPage,
-  NewsPage,
-  ComplainPage,
-  ContactPage,
-  RulesOfOrder,
-  LoginPage,
-};
+export { default as HomePage } from './home';
+export { default as ComplainPlage } from './complaint';
+export { default as LoginPage } from './login';
+export { default as MembersPage } from './members';
+export { default as RulesPage } from './rules';
+export { default as NewsPage } from './news';
+export { default as NewsArticle } from './news/newsArticle';

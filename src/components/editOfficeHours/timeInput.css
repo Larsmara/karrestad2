@@ -1,0 +1,25 @@
+.input-time {
+  width: 100%;
+  min-width: 0;
+  outline: 0;
+  position: 'relative';
+  appearance: 'none';
+  transition: 'all 0.2s';
+  border: 1px solid;
+  border-color: #e2e8f0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.input-time:hover {
+  border-color: hsl(0, 0%, 80%);
+}
+
+.input-time:focus-within {
+  border: 1px solid;
+  border-color: #3182ce;
+}
