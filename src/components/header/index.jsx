@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
-import { Box, Flex, Text, Button } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import { ROUTES } from '@constants/routes';
-import { FirebaseContext } from '@context';
-import useAuthListener from '@hooks/useAuthListener';
 import Logo from '../logo';
 
 const MenuItem = ({ children, isLast, to, articleRouteMatch, ...rest }) => {
@@ -45,12 +43,8 @@ const MenuIcon = () => (
 );
 
 const Header = (props) => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = useState(false);
   const toggleMenu = () => setShow(!show);
-  const { firebase } = useContext(FirebaseContext);
-  const { user } = useAuthListener();
-
-  const matchArticle = useRouteMatch(ROUTES.NEWSARTICLE)?.isExact;
 
   return (
     <Flex
@@ -85,43 +79,8 @@ const Header = (props) => {
           pt={[4, 4, 0, 0]}
         >
           <MenuItem to={ROUTES.HOME}>Home</MenuItem>
-          <MenuItem to={ROUTES.NEWS} articleRouteMatch={matchArticle}>
-            News
-          </MenuItem>
           <MenuItem to={ROUTES.RULES}>Rules</MenuItem>
           <MenuItem to={ROUTES.MEMBERS}>Members</MenuItem>
-          <MenuItem to={ROUTES.COMPLAIN}>Complain</MenuItem>
-          <MenuItem to={ROUTES.LOGIN} isLast>
-            <Button
-              width='100px'
-              size='sm'
-              rounded='md'
-              color={['teal.500', 'teal.500', 'white', 'white']}
-              bg={['white', 'white', 'teal.500', 'teal.500']}
-              _hover={{
-                bg: ['teal.100', 'teal.100', 'teal.600', 'teal.600']
-              }}
-            >
-              Portal
-            </Button>
-          </MenuItem>
-          {user && (
-            <Button
-              width='100px'
-              ml={3}
-              size='sm'
-              rounded='md'
-              colorScheme='blue'
-              onClick={() => firebase.auth().signOut()}
-              onKeyDown={(event) => {
-                if (event.key === 'Enter') {
-                  firebase.auth().signOut();
-                }
-              }}
-            >
-              Logg ut
-            </Button>
-          )}
         </Flex>
       </Box>
     </Flex>
