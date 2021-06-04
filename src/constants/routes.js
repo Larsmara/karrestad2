@@ -1,9 +1,9 @@
 export const ROUTES = {
   HOME: '/',
-  RULES: '/rules',
+  RULES: '/regler',
   NEWS: '/news',
   NEWSARTICLE: '/news/:id',
-  MEMBERS: '/members',
+  MEMBERS: '/styret',
   COMPLAIN: '/complain',
   LOGIN: '/login'
 };

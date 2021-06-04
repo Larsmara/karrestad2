@@ -78,9 +78,9 @@ const Header = (props) => {
           direction={['column', 'row', 'row', 'row']}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItem to={ROUTES.HOME}>Home</MenuItem>
-          <MenuItem to={ROUTES.RULES}>Rules</MenuItem>
-          <MenuItem to={ROUTES.MEMBERS}>Members</MenuItem>
+          <MenuItem to={ROUTES.HOME}>Hjem</MenuItem>
+          <MenuItem to={ROUTES.RULES}>Regler</MenuItem>
+          <MenuItem to={ROUTES.MEMBERS}>Styret</MenuItem>
         </Flex>
       </Box>
     </Flex>
