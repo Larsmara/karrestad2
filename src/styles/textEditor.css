@@ -1,0 +1,16 @@
+.ql-container.ql-snow {
+  min-height: 10em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: #fefcfc;
+  border-color: #319795;
+  border-top: 1px solid #319795 !important;
+}
+
+.ql-toolbar.ql-snow {
+  background: #eaecec;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  border-bottom: none;
+  border-color: #319795;
+}

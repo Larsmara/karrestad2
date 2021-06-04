@@ -1,28 +1,29 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { Navbar } from './components';
-import {
-  HomePage,
-  ComplainPage,
-  ContactPage,
-  RulesOfOrder,
-  LoginPage,
-} from './pages';
+import { BrowserRouter as Switch, Route } from 'react-router-dom';
+import { ROUTES } from './constants/routes';
+import { useRules, useMembers } from './hooks';
+import { AppDataContext } from './context';
+import { HomePage, RulesPage, MembersPage } from './pages';
 
 function App() {
+  const { rules, loading: rulesLoading } = useRules();
+  const { members, loading: membersLoading } = useMembers();
   return (
-    <>
-      <Navbar />
-      <div className='main'>
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route exact path='/contact' component={ContactPage} />
-          <Route exact path='/complain' component={ComplainPage} />
-          <Route exact path='/rules' component={RulesOfOrder} />
-          <Route exact path='/login' component={LoginPage} />
-        </Switch>
-      </div>
-    </>
+    <AppDataContext.Provider value={{ rules, rulesLoading, members, membersLoading }}>
+      <Switch>
+        <Route path={ROUTES.RULES} exact>
+          <RulesPage />
+        </Route>
+
+        <Route path={ROUTES.MEMBERS} exact>
+          <MembersPage />
+        </Route>
+
+        <Route path={ROUTES.HOME} exact>
+          <HomePage />
+        </Route>
+      </Switch>
+    </AppDataContext.Provider>
   );
 }
 
