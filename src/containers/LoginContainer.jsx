@@ -44,10 +44,12 @@ const LoginContainer = () => {
         <Box textAlign='center'>
           <Heading>Innlogging for styremedlemmer</Heading>
         </Box>
-        <Alert status='error'>
-          <AlertIcon />
-          There was an error processing your request
-        </Alert>
+        {error !== '' && (
+          <Alert status='error'>
+            <AlertIcon />
+            There was an error processing your request
+          </Alert>
+        )}
         <Box my={4} textAlign='left'>
           <form onSubmit={onSubmit}>
             <FormControl>

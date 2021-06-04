@@ -17,7 +17,7 @@ const NewsPage = () => {
       setArticle(location.state.article);
     }
     return () => setArticle(null);
-  }, [hasArticle]);
+  }, []);
 
   if (!hasArticle || article === null) {
     return null;
