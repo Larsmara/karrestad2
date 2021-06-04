@@ -25,7 +25,19 @@ export async function deleteRule(rule) {}
 /* END - RULES */
 
 /* START - MEMBERS */
-export async function getMembers() {}
+export async function getMembers() {
+  const data = [];
+  await db
+    .collection('members')
+    .get()
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        data.push({ ...doc.data(), id: doc.id });
+      });
+    });
+
+  return data;
+}
 
 export async function addMember(member) {}
 

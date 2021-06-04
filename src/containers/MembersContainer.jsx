@@ -8,6 +8,7 @@ const MembersContainer = ({ member: { role, name, from, to } }) => {
     const year = new Date(date).getFullYear();
     return `${day}.${month}.${year}`;
   };
+
   return (
     <Box pt={2}>
       <Heading fontSize='xl'>{name}</Heading>
