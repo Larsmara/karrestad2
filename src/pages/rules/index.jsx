@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
 import { Heading, Box, Spinner } from '@chakra-ui/react';
-import BasicLayout from '@components/basicLayout';
-import RulesContainer from '@containers/RulesContainer';
-import useRules from '@hooks/useRules';
-import { AppDataContext } from '@context';
+import { Layout } from '../../components';
+import RulesContainer from '../../containers/RulesContainer';
+import { AppDataContext } from '../../context';
 
 const RulesPage = () => {
   const { rules } = useContext(AppDataContext);
@@ -15,14 +14,14 @@ const RulesPage = () => {
   }
 
   return (
-    <BasicLayout>
+    <Layout>
       <Box p={4}>
         <Heading>Ordensregler for vårt borettslag</Heading>
         {rules.map((rule) => (
           <RulesContainer key={rule.id} title={rule.title} text={rule.rule} />
         ))}
       </Box>
-    </BasicLayout>
+    </Layout>
   );
 };
 

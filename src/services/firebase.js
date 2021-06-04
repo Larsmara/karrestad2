@@ -1,4 +1,4 @@
-import { firebase, FieldValue } from '@lib/firebase';
+import { firebase, FieldValue } from '../lib/firebase';
 
 const db = firebase.firestore();
 

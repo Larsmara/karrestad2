@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Switch, Route } from 'react-router-dom';
-import { ROUTES } from '@constants/routes';
-import { useRules, useMembers } from '@hooks';
-import { AppDataContext } from '@context';
+import { ROUTES } from './constants/routes';
+import { useRules, useMembers } from './hooks';
+import { AppDataContext } from './context';
 import { HomePage, RulesPage, MembersPage } from './pages';
 
 function App() {

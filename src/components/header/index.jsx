@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
 import { Box, Flex, Text } from '@chakra-ui/react';
-import { ROUTES } from '@constants/routes';
+import { ROUTES } from '../../constants/routes';
 import Logo from '../logo';
 
 const MenuItem = ({ children, isLast, to, articleRouteMatch, ...rest }) => {

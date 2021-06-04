@@ -1,12 +1,12 @@
 import React from 'react';
-import BasicLayout from '@components/basicLayout';
-import ComplainContainer from '@containers/ComplainContainer';
+import { Layout } from '../../components';
+import ComplainContainer from '../../containers/ComplainContainer';
 
 const ComplaintPage = () => {
   return (
-    <BasicLayout>
+    <Layout>
       <ComplainContainer />
-    </BasicLayout>
+    </Layout>
   );
 };
 

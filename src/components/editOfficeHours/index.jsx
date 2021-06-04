@@ -15,7 +15,7 @@ import {
   Stack,
   Checkbox
 } from '@chakra-ui/react';
-import { Days } from '@constants/days';
+import { Days } from '../../constants/days';
 import './timeInput.css';
 
 const EditOfficeHours = () => {

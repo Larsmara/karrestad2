@@ -8,8 +8,8 @@ import {
   AccordionIcon,
   Box
 } from '@chakra-ui/react';
-import { EditableTextArea } from '@components';
-import rules from '@fixtures/rules';
+import { EditableTextArea } from '../../components';
+import rules from '../../fixtures/rules';
 
 const Rules = () => {
   return (

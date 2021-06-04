@@ -11,8 +11,8 @@ import {
   AccordionIcon,
   AccordionPanel
 } from '@chakra-ui/react';
-import { MemberEdit, EditOfficeHours, AddNewMember } from '@components';
-import { members } from '@fixtures/members';
+import { MemberEdit, EditOfficeHours, AddNewMember } from '../../components';
+import { members } from '../../fixtures/members';
 
 const Members = () => {
   const [addingNewMember, setAddingNewMember] = useState(false);

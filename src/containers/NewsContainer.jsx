@@ -12,7 +12,7 @@ import {
   Button
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import news from '@fixtures/news';
+import news from '../fixtures/news';
 
 const NewsContainer = () => {
   const history = useHistory();

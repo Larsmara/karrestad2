@@ -13,8 +13,8 @@ import {
   AlertIcon
 } from '@chakra-ui/react';
 import { CheckIcon, CloseIcon } from '@chakra-ui/icons';
-import DatePicker from '@components/datePicker';
-import { Roles } from '@constants/memberRoles';
+import { DatePicker } from '../index';
+import { Roles } from '../../constants/memberRoles';
 
 const AddNewMember = ({ addMember, close }) => {
   const [newMember, setNewMember] = useState({

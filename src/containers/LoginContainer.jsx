@@ -1,8 +1,6 @@
 import React, { useState, useContext } from 'react';
-import { useHistory } from 'react-router-dom';
 import { Box, Flex, Heading, FormControl, FormLabel, Input, Button } from '@chakra-ui/react';
-import { FirebaseContext } from '@context';
-import { ROUTES, ADMIN_ROUTES } from '@constants/routes';
+import { FirebaseContext } from '../context';
 
 const LoginContainer = () => {
   const { firebase } = useContext(FirebaseContext);

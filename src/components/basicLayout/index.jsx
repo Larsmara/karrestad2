@@ -1,9 +1,8 @@
 import React from 'react';
 import { Flex } from '@chakra-ui/react';
 import { useRouteMatch } from 'react-router-dom';
-import Header from '@components/header';
-import { Container, Footer } from '@components';
-import { ROUTES } from '@constants/routes';
+import { Container, Footer, Header } from '../index';
+import { ROUTES } from '../../constants/routes';
 
 export default function BasicLayout({ children, ...rest }) {
   const isLanding =

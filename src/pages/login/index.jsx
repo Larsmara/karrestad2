@@ -1,12 +1,12 @@
 import React from 'react';
-import BasicLayout from '@components/basicLayout';
-import LoginContainer from '@containers/LoginContainer';
+import { Layout } from '../../components';
+import LoginContainer from '../../containers/LoginContainer';
 
 const LoginPage = () => {
   return (
-    <BasicLayout>
+    <Layout>
       <LoginContainer />
-    </BasicLayout>
+    </Layout>
   );
 };
 

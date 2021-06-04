@@ -13,8 +13,8 @@ import {
   Select
 } from '@chakra-ui/react';
 import { CheckIcon, CloseIcon, EditIcon } from '@chakra-ui/icons';
-import DatePicker from '@components/datePicker';
-import { Roles } from '@constants/memberRoles';
+import { DatePicker } from '../index';
+import { Roles } from '../../constants/memberRoles';
 
 const MemberEdit = ({ name, role, from, to }) => {
   const [isEditing, setIsEditing] = useState(false);

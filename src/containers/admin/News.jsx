@@ -12,11 +12,11 @@ import {
   FormLabel,
   FormHelperText
 } from '@chakra-ui/react';
-import TextEditorToolbar from '@fixtures/textEditorToolbars';
+import TextEditorToolbar from '../../fixtures/textEditorToolbars';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import '../../styles/textEditor.css';
-import imageFormats from '@fixtures/imageFormats';
+import imageFormats from '../../fixtures/imageFormats';
 
 const News = () => {
   const [textArea, setTextArea] = useState('');

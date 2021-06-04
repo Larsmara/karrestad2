@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from 'react';
-import { UserContext } from '@context';
+import { UserContext } from '../context';
 import { getUserByUserId } from '../services/firebase';
 
 export default function useUser() {

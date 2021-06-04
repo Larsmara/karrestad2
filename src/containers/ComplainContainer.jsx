@@ -14,7 +14,7 @@ import {
   FormLabel,
   FormHelperText
 } from '@chakra-ui/react';
-import apartments from '@fixtures/apartments';
+import apartments from '../fixtures/apartments';
 
 const ComplainContainer = () => {
   const [newComplaint, setNewComplaint] = useState({

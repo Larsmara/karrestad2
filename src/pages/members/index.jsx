@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { Heading, Box, Text, Skeleton, Stack } from '@chakra-ui/react';
-import BasicLayout from '@components/basicLayout';
-import MembersContainer from '@containers/MembersContainer';
-import { AppDataContext } from '@context';
+import { Layout } from '../../components';
+import MembersContainer from '../../containers/MembersContainer';
+import { AppDataContext } from '../../context';
 
 const MembersPage = () => {
   const { members, membersLoading } = useContext(AppDataContext);
@@ -17,7 +17,7 @@ const MembersPage = () => {
     );
   }
   return (
-    <BasicLayout>
+    <Layout>
       <Heading fontSize='3xl' mb={2} textAlign='center'>
         Informasjon om styret
       </Heading>
@@ -29,7 +29,7 @@ const MembersPage = () => {
           <MembersContainer key={member.name} member={member} />
         ))}
       </Box>
-    </BasicLayout>
+    </Layout>
   );
 };
 

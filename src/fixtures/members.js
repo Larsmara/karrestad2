@@ -1,4 +1,4 @@
-import { Roles } from '@constants/memberRoles';
+import { Roles } from '../constants/memberRoles';
 
 export const members = [
   {
