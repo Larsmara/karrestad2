@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box, Button, Stack, Spacer } from '@chakra-ui/react';
+import { Flex, Box, Button, Stack } from '@chakra-ui/react';
 import { Link, useRouteMatch } from 'react-router-dom';
 import { Header } from '../index';
 

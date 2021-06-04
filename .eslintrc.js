@@ -17,6 +17,7 @@ module.exports = {
   rules: {
     'react/prop-types': 'off',
     quotes: 'off',
-    'no-unused-expressions': 0
+    'no-unused-expressions': 0,
+    'react-hooks/exhaustive-deps': 0
   }
 };
