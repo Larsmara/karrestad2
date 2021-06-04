@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Container, Stack, Text, useColorModeValue, Link } from '@chakra-ui/react';
 
 export default function Footer() {
   return (
@@ -21,7 +21,16 @@ export default function Footer() {
         align={{ base: 'center', md: 'center' }}
       >
         <Stack direction={'row'} spacing={6}>
-          <Text>Kontakt oss på tlf: 932 93 036</Text>
+          <Text>
+            Kontakt oss på tlf:
+            <Link href='tel:+4747679217'> 476 79 217</Link>
+          </Text>
+          <Text>
+            Mail:{' '}
+            <Link display='inline' href='mailto:abborfiskern@gmail.com'>
+              abborfiskern@gmail.com
+            </Link>
+          </Text>
         </Stack>
         <Text>© 2021 Lars-Martin Antonsen</Text>
       </Container>
