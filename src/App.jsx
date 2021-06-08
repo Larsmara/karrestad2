@@ -4,10 +4,12 @@ import { ROUTES } from './constants/routes';
 import { useRules, useMembers } from './hooks';
 import { AppDataContext } from './context';
 import { HomePage, RulesPage, MembersPage } from './pages';
+require('dotenv').config();
 
 function App() {
   const { rules, loading: rulesLoading } = useRules();
   const { members, loading: membersLoading } = useMembers();
+
   return (
     <AppDataContext.Provider value={{ rules, rulesLoading, members, membersLoading }}>
       <Switch>
