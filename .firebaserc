@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "karrestad2-dev"
+    "default": "karrestad2-dev",
+    "prod": "karrestad-2"
   }
 }
