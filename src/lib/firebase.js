@@ -3,12 +3,12 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: process.env.REACT_APP_API_FB_KEY,
-  authDomain: process.env.REACT_APP_FB_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FB_DATABASE_URL,
-  storageBucket: process.env.REACT_APP_FB_PROJECT_ID,
-  messagingSenderId: process.env.REACT_APP_FB_STORAGE_BUCKET,
-  appId: process.env.REACT_APP_FB_MESSAGING_SENDER_ID
+  apiKey: 'AIzaSyAt0oYn4nDCM4uaBah-q5asQVlLOtejcpE',
+  authDomain: 'karrestad2-dev.firebaseapp.com',
+  projectId: 'karrestad2-dev',
+  storageBucket: 'karrestad2-dev.appspot.com',
+  messagingSenderId: '596289995554',
+  appId: '1:596289995554:web:4a4c51fd71f40e81ca9b7b'
 };
 
 const firebase = Firebase.initializeApp(config);
