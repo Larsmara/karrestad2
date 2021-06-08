@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import AdminLayout from '@components/adminLayout';
+import { AdminLayout } from '../components';
 import {
   AdminPortal,
   AdminRules,
@@ -8,7 +8,7 @@ import {
   AdminHome,
   AdminNews,
   HandleComplaints
-} from '@containers/admin';
+} from '../containers/admin';
 
 export const IfUserRedirect = ({ user, loggedInPath, children, ...rest }) => {
   return (

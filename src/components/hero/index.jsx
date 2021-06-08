@@ -63,6 +63,20 @@ export default function Hero({
               {ctaText}
             </Button>
           </Link>
+          <Link to={cta2Link}>
+            <Button
+              colorScheme='teal'
+              borderRadius='8px'
+              py='4'
+              ml={2}
+              px='4'
+              lineHeight='1'
+              size='md'
+              rightIcon={<ChevronRightIcon />}
+            >
+              {cta2Text}
+            </Button>
+          </Link>
         </Flex>
       </Stack>
       <Box w={{ base: '80%', sm: '60%', md: '60%' }} mb={{ base: 12, md: 0 }}>
